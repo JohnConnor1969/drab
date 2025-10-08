@@ -180,6 +180,7 @@ defmodule Mix.Tasks.Drab.Install do
   defp supported_phoenix?() do
     v = to_string(Application.spec(:phoenix, :vsn))
     Regex.match?(~r/^1.[34]/, v)
+    true
   end
 
   defp webpack?() do
