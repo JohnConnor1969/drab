@@ -49,21 +49,21 @@ defmodule Drab.Mixfile do
 
   defp deps do
     [
-      {:phoenix, "~> 1.2"},
-      {:phoenix_html, "~> 2.13"},
-      {:phoenix_pubsub, "~> 1.0"},
-      {:phoenix_live_reload, "~> 1.0", only: :dev},
-      {:gettext, "~> 0.11"},
+      {:phoenix, "~> 1.6.15"},
+      {:phoenix_html, "~> 3.0"},
+#      {:phoenix_pubsub, "~> 1.0"},
+      {:phoenix_live_reload, "~> 1.2", only: :dev},
+      {:gettext, "~> 0.18"},
       {:cowboy, "~> 1.0 or ~> 2.2.2 or ~> 2.3"},
       {:plug_cowboy, "~> 1.0 or ~> 2.0"},
       {:ex_doc, "~> 0.18", only: :dev, runtime: false},
       {:hound, "~> 1.0", only: [:dev, :test]},
       {:inch_ex, "~> 1.0", only: [:docs], runtime: false},
       {:deppie, "~> 1.0"},
-      {:floki, ">= 0.20.2"},
+      {:floki, ">= 0.30.0"},
       {:dialyxir, "~> 1.0.0-rc.2", only: [:dev, :test], runtime: false},
       # {:credo, "~> 0.9.3", only: [:dev, :test], runtime: false},
-      {:jason, "~> 1.0"}
+      {:jason, "~> 1.2"}
     ]
   end
 
